@@ -43,17 +43,22 @@ that API endpoints can use all HTTP verbs (`GET`, `POST`, `PUT`, `PATCH`,
 For example, to edit a specific post, the API endpoint could be
 `PATCH /posts/:postId`
 
-- Get all the posts
-- Create a new post
-- Edit a post
-- Create a new user
-- Get the comments for a post
-- Create a comment for a post
-- Edit a comment for a post
+- Get all the posts GET/posts/
+- Create a new post POST/posts
+- Edit a post PATCH/post/:postId
+- Create a new user POST/users
+- Get the comments for a post GET/posts/:postId/comments
+- Create a comment for a post POST/posts/:postID/comments
+- Edit a comment for a post PUT/comments/:commentsId
 - Delete a comment for a post
+   -Delete/comments/:commentId
 - Add a like for a post
+    -POST/posts/:postID/like
 - Remove a like for a post
+    -Delete/posts/:postId/likes/likeId
 - Get all the posts of a user
+     -GET/user/:userId/posts
 - Submit a search on posts
+      -GET/posts?username=yake(?=query)
 
 [starter]: https://github.com/appacademy/practice-for-week-08-creating-api-docs
