@@ -59,6 +59,6 @@ For example, to edit a specific post, the API endpoint could be
 - Get all the posts of a user
      -GET/user/:userId/posts
 - Submit a search on posts
-      -GET/posts?username=yake(?=query)
+      -GET/posts?username=yake //?=query
 
 [starter]: https://github.com/appacademy/practice-for-week-08-creating-api-docs
